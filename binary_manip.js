@@ -14,6 +14,10 @@ class binary {
      */
     bits;
 
+    constructor(){
+        //Do nothing
+    }
+
     /**
      * Gets this binary as a number. 
      */

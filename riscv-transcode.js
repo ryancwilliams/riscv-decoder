@@ -4,6 +4,9 @@
  * @author ryancwilliams
  */
 
+ /**
+  * A Riscv Instruction data structure.
+  */
 class RiscvInstruction {
 
     /**

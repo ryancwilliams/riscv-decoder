@@ -33,7 +33,7 @@ class Binary {
      */
     getBits(index_high, index_low) {
         //Get Length
-        let length = bits.length;
+        let length = this.bits.length;
         //Convert bit indexes to string indexes
         let iHI = length - index_high - 1; //Subtract 1 because substring is exclusive
         let iLOW = length - index_low;

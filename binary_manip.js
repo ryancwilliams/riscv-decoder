@@ -25,6 +25,21 @@ class Binary {
         let num = Number.parseInt(this.bits, 2);
         return num;
     }
+
+    /**
+     * Gets the bits between the indexes as a binary string.
+     * @param {*} index_high The highest bit
+     * @param {*} index_low The lowest bit
+     */
+    getBits(index_high, index_low) {
+        //Get Length
+        let length = bits.length;
+        //Convert bit indexes to string indexes
+        let iHI = length - index_high - 1; //Subtract 1 because substring is exclusive
+        let iLOW = length - index_low;
+
+        return this.bits.substring(iHI, iLOW);
+    }
 }
 
 /**

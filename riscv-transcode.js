@@ -73,5 +73,7 @@ const RV_INSTYPE = {
     S_TYPE: new RiscvInsType("S-type"),
     B_TYPE: new RiscvInsType("B-type"),
     U_TYPE: new RiscvInsType("U-type"),
-    J_TYPE: new RiscvInsType("J-type")
+    J_TYPE: new RiscvInsType("J-type"),
+    OTHER_TYPE: new RiscvInsType("Other-Type")
+}
 }

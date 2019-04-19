@@ -10,7 +10,7 @@
 class binary {
 
     /**
-     * The number as a string of bits
+     * The number as a string of binary bits
      */
     bits;
 

@@ -8,6 +8,7 @@
  * A binary number
  */
 class binary {
+class Binary {
 
     /**
      * The number as a string of binary bits
@@ -34,9 +35,9 @@ class binary {
  */
 function binaryFromNumber(num) {
 
-    Console.assert(num instanceof Number);
+    console.assert(typeof num == "number");
 
-    let binary = new binary();
+    let binary = new Binary();
     binary.bits = num.toString(2);
     return binary;
 }
@@ -49,7 +50,7 @@ function binaryFromNumber(num) {
 function binaryFromHex(hex) {
     let num = Number.parseInt(hex, 16);
 
-    Console.assert(!Number.isNaN(num));
+    console.assert(!Number.isNaN(num));
 
     return binaryFromNumber(num);
 }
@@ -59,10 +60,10 @@ function binaryFromHex(hex) {
  * 
  * @param {*} hex The decimal string.
  */
-function binaryFromHex(dec) {
+function binaryFromDec(dec) {
     let num = Number.parseInt(dec, 10);
 
-    Console.assert(!Number.isNaN(num));
+    console.assert(!Number.isNaN(num));
 
     return binaryFromNumber(num);
 }

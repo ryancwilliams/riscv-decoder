@@ -43,3 +43,35 @@ class RiscvInstruction {
     imm;
 
 }
+
+/**
+ * A Riscv Instruction Type
+ */
+class RiscvInsType {
+
+    /**
+     * The name of the type
+     */
+    typename;
+
+    /**
+     * Creates a new Instruction Type
+     * @param {*} typename The name of the type as a string
+     */
+    constructor(typename) {
+        this.typename = typename;
+    }
+    
+}
+
+/**
+ * The instruction types in RiscV
+ */
+const RV_INSTYPE = {
+    R_TYPE: new RiscvInsType("R-type"),
+    I_TYPE: new RiscvInsType("I-type"),
+    S_TYPE: new RiscvInsType("S-type"),
+    B_TYPE: new RiscvInsType("B-type"),
+    U_TYPE: new RiscvInsType("U-type"),
+    J_TYPE: new RiscvInsType("J-type")
+}

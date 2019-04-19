@@ -7,7 +7,6 @@
 /**
  * A binary number
  */
-class binary {
 class Binary {
 
     /**

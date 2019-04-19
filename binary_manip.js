@@ -40,6 +40,20 @@ class Binary {
 
         return this.bits.substring(iHI, iLOW);
     }
+
+    /**
+     * Gets the bits between the indexes as a number.
+     * @param {*} index_high The highest bit
+     * @param {*} index_low The lowest bit
+     */
+    getBitsAsNumber(index_high, index_low) {
+        //get the bits
+        let subbits = this.getBits(index_high, index_low);
+        //Compute the number
+        let num = Number.parseInt(subbits, 2);
+        return num;
+    }
+    
 }
 
 /**
